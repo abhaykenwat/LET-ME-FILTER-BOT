@@ -87,9 +87,9 @@ LAZY_MODE = bool(environ.get("LAZY_MODE")) #make it true to enable file renaming
 
 # Requested Content template variables --- 
 ADMIN_USRNM = environ.get('ADMIN_USRNM','MR_ABHAY_K') # WITHOUT @
-MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','MR_ABHAY_K') # WITHOUT @
-DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','MR_ABHAY_K') # WITHOUT @
-LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','MR_ABHAY_K')  # WITHOUT @ [  add only handle - don't add full url  ] 
+MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','movie_mines_main') # WITHOUT @
+DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','movie_mines_main') # WITHOUT @
+LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','movie_mines_main')  # WITHOUT @ [  add only handle - don't add full url  ] 
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "MOVIE_MINES_GROUP") #[ without @ ]
 
 # Url Shortner
