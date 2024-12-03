@@ -35,7 +35,7 @@ async def start(client, message):
                 [
                     InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
                 ],[
-                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierequestAK')
+                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierhttps://t.me/MOVIE_MINES_GROUP')
                 ],[
                 InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
                 ],
@@ -51,7 +51,7 @@ async def start(client, message):
                 [
                     InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
                 ],[
-                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierequestAK')
+                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/MOVIE_MINES_GROUP')
                 ],
                 [
                     InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
@@ -82,7 +82,7 @@ async def start(client, message):
                 InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='openSettings'),
                 InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierequestAK')
+                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/MOVIE_MINES_GROUP')
                 ],[
                 InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
                 ]]
@@ -99,7 +99,7 @@ async def start(client, message):
                 InlineKeyboardButton('⚙ Sᴇᴛᴛɪɴɢs', callback_data='openSettings'),
                 InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
                 ],[
-                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierequestAK')
+                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/MOVIE_MINES_GROUP')
                 ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -160,7 +160,7 @@ A கீழே உள்ள எங்கள் புதுப்பிக்க
                 InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
                 ],
             [
-                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierequestAK')
+                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/MOVIE_MINES_GROUP')
             ],
             [
                 InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
@@ -180,7 +180,7 @@ A கீழே உள்ள எங்கள் புதுப்பிக்க
                 InlineKeyboardButton('♥️ Aʙᴏᴜᴛ', callback_data='about')
                 ],
             [
-                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierequestAK')
+                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/MOVIE_MINES_GROUP')
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
