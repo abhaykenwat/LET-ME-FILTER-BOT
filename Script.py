@@ -107,7 +107,7 @@ Here is the help for my COMMANDS."""
 
 """
     ABOUT_TXT = """✯ 𝕚𝕥𝕤❜𝕤 me: {}
-✯ OWNER: <a href=https://t.me/Abhaykumar032003>👑 Abhay kumar 👑</a>
+✯ OWNER: <a href=https://t.me/MR_ABHAY_K>👑 Abhay kumar 👑</a>
 ✯ Developer: <a href=https://t.me/LazyDeveloper>🦋 LazyDeveloper 🦋</a>
 ✯ 𝙻𝙸𝙱𝚁𝙰𝚁𝚈: 𝙿𝚈𝚁𝙾𝙶𝚁𝙰𝙼
 ✯ 𝙻𝙰𝙽𝙶𝚄𝙰𝙶𝙴: 𝙿𝚈𝚃𝙷𝙾𝙽 𝟹
@@ -119,11 +119,11 @@ Here is the help for my COMMANDS."""
     SOURCE_TXT = """<b>NOTE:</b>
 - 🎉AK MOVIE SEARCH BOT ɪs ᴀɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ.
 
-- 🎁Sᴏᴜʀᴄᴇ -  Its a private property ! contact @Abhaykumar032003 for more info...
+- 🎁Sᴏᴜʀᴄᴇ -  Its a private property ! contact @MR_ABHAY_K for more info...
  
 
 <b>Owner:</b>
--  👑 <a href=https://t.me/Abhaykumar032003>Abhay kumar</a> 👑"""
+-  👑 <a href=https://t.me/MR_ABHAY_K>Abhay kumar</a> 👑"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Fɪʟᴛᴇʀ ɪs ᴛʜᴇ ғᴇᴀᴛᴜʀᴇ ᴡᴇʀᴇ ᴜsᴇʀs ᴄᴀɴ sᴇᴛ ᴀᴜᴛᴏᴍᴀᴛᴇᴅ ʀᴇᴘʟɪᴇs ғᴏʀ ᴀ ᴘᴀʀᴛɪᴄᴜʟᴀʀ ᴋᴇʏᴡᴏʀᴅ ᴀɴᴅ LᴀᴢʏPʀɪɴᴇss ᴡɪʟʟ ʀᴇsᴘᴏɴᴅ ᴡʜᴇɴᴇᴠᴇʀ ᴛʜᴀᴛ ᴋᴇʏᴡᴏʀᴅ ʜɪᴛs ᴛʜᴇ ᴍᴇssᴀɢᴇ
