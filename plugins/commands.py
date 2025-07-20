@@ -30,12 +30,12 @@ async def start(client, message):
         if message.from_user.id in ADMINS:
             buttons = [
                 [
-                    InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/AK_BOTZ_SUPPORT')
+                    InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
                 ],
                 [
-                    InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/AK_BOTZ_UPDATE"),
+                    InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
                 ],[
-                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierhttps://t.me/MOVIE_MINES_MAIN')
+                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierhttps://t.me/MOVIE_MINES_GROUP')
                 ],[
                 InlineKeyboardButton('💸 E𝐚𝐫𝐧 M𝐨𝐧𝐞𝐲 💸', callback_data="shortlink_info")
                 ],
@@ -46,12 +46,12 @@ async def start(client, message):
         else:
             buttons = [
                 [
-                    InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/AK_BOTZ_SUPPORT')
+                    InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
                 ],
                 [
-                    InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/AK_BOTZ_UPDATE"),
+                    InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
                 ],[
-                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/MOVIE_MINES_MAIN')
+                InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/MOVIE_MINES_GROUP')
                 ],
                 [
                     InlineKeyboardButton(text=DOWNLOAD_TEXT_NAME,url=DOWNLOAD_TEXT_URL)
