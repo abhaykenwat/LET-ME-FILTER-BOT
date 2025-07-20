@@ -30,10 +30,10 @@ async def start(client, message):
         if message.from_user.id in ADMINS:
             buttons = [
                 [
-                    InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
+                    InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/AK_BOTZ_SUPPORT')
                 ],
                 [
-                    InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                    InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/AK_BOTZ_UPDATE"),
                 ],[
                 InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/movierhttps://t.me/MOVIE_MINES_MAIN')
                 ],[
@@ -46,10 +46,10 @@ async def start(client, message):
         else:
             buttons = [
                 [
-                    InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/{MOVIE_GROUP_USERNAME}')
+                    InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/AK_BOTZ_SUPPORT')
                 ],
                 [
-                    InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                    InlineKeyboardButton('🙆🏻 Hᴇʟᴘ 🦾', url=f"https://t.me/AK_BOTZ_UPDATE"),
                 ],[
                 InlineKeyboardButton('⪦ 𝕄𝕆𝕍𝕀𝔼 ℂℍ𝔸ℕℕ𝔼𝕃 ⪧', url='https://t.me/MOVIE_MINES_MAIN')
                 ],
