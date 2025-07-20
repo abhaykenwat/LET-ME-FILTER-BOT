@@ -10,3 +10,4 @@ RUN mkdir /LazyPrincess
 WORKDIR /LazyPrincess
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
+
