@@ -2,7 +2,7 @@
   <img src="https://iili.io/20ESap4.jpg" alt="LET ME FILTER">
 </p>
 <h1 align="center">
-  <b> Lazy Princess BOT </b>
+  <b> LET ME FILTER </b>
 </h1>
 
 ## ⚡️Features
