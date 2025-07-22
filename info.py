@@ -163,7 +163,7 @@ LANGUAGES = ["hindi", "hin", "english", "eng", "korean", "kor", "urdu", "urd","c
 SEASONS = ["season 1" , "season 2" , "season 3" , "season 4", "season 5" , "season 6" , "season 7" , "season 8" , "season 9" , "season 10"]
 QUALITIES = ["360P", "", "480P", "", "720P", "", "1080P", "", "1440P", "", "2160P", ""]
 
-MAX_B_TN = environ.get("MAX_B_TN", "10")
+MAX_B_TN = environ.get("MAX_B_TN", "7")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 
 # Auto Delete For Group Message (Self Delete) #
