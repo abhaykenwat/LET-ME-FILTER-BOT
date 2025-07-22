@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.postimg.cc/gJNsT20C/Letmefilter-bot-1.png" alt="LET ME FILTER">
+  <img src="https://i.postimg.cc/gJNsT20C/Letmefilter-bot-1.png" alt="LET ME FILTER" width="300">
 </p>
 <h1 align="center">
   <b> LET ME FILTER </b>
