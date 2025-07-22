@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://i.postimg.cc/gJNsT20C/Letmefilter-bot-1.png" alt="LET ME FILTER" width="450">
+  <img src="https://i.postimg.cc/Xvqgm0Tm/dreamgirlxbot-1.png" alt="DREAM GIRL X BOT" width="450">
 </p>
 <h1 align="center">
-  <b> LET ME FILTER </b>
+  <b> DREAM GIRL X BOT</b>
 </h1>
 
 ## ⚡️Features
