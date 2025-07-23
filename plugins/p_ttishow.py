@@ -8,7 +8,7 @@ from utils import get_size, temp, get_settings
 from Script import script
 from pyrogram.errors import ChatAdminRequired
 
-"""-----------------------------------------https://t.me/LazyDeveloper --------------------------------------"""
+"""-----------------------------------------https://t.me/MOVIE_MINES_UPDATE--------------------------------------"""
 
 @Client.on_message(filters.new_chat_members & filters.group)
 async def save_group(bot, message):
@@ -37,7 +37,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('🤥 Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/MOVIE_MINES_UPDATE')
+            InlineKeyboardButton('🔍 Group​​​​​', url=f'https://t.me/AK_BOTZ_UPDATE')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -81,7 +81,7 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/MOVIE_MINES_UPDATE')
+            InlineKeyboardButton('Support', url=f'https://t.me/AK_BOTZ_UPDATE')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
@@ -120,7 +120,7 @@ async def disable_chat(bot, message):
     await message.reply('Chat Successfully Disabled')
     try:
         buttons = [[
-            InlineKeyboardButton('Support', url=f'https://t.me/MOVIE_MINES_UPDATE')
+            InlineKeyboardButton('Support', url=f'https://t.me/AK_BOTZ_UPDATE')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
