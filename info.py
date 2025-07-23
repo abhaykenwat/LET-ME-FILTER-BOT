@@ -64,7 +64,7 @@ LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyu
 # Others
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/MOVIE_MINES_GROUP/186') # Tutorial video link for opening shortlink website 
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'LazyDeveloper')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'AK_BOTZ_UPDATE')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
@@ -87,9 +87,9 @@ LAZY_MODE = bool(environ.get("LAZY_MODE")) #make it true to enable file renaming
 
 # Requested Content template variables --- 
 ADMIN_USRNM = environ.get('ADMIN_USRNM','MR_ABHAY_K') # WITHOUT @
-MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','movie_mines_main') # WITHOUT @
-DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','movie_mines_main') # WITHOUT @
-LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','movie_mines_main')  # WITHOUT @ [  add only handle - don't add full url  ] 
+MAIN_CHANNEL_USRNM = environ.get('MAIN_CHANNEL_USRNM','MOVIR_MINES_UPDATE') # WITHOUT @
+DEV_CHANNEL_USRNM = environ.get('DEV_CHANNEL_USRNM','MOVIE_MINES_UPDATE') # WITHOUT @
+LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','MOVIE_MINES_UPDATE')  # WITHOUT @ [  add only handle - don't add full url  ] 
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "MOVIE_MINES_GROUP") #[ without @ ]
 
 # Url Shortner
@@ -139,7 +139,7 @@ if HAS_SSL:
 else:
     URL = "http://{}/".format(FQDN)
 BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001987654567")).split())) 
-OWNER_USERNAME = "LazyDeveloper"
+OWNER_USERNAME = "MR_ABHAY_K"
 
 lazydownloaders = [int(lazydownloaders) if id_pattern.search(lazydownloaders) else lazydownloaders for lazydownloaders in environ.get('PRIME_DOWNLOADERS', '').split()]
 PRIME_DOWNLOADERS = (lazydownloaders) if lazydownloaders else []
@@ -181,7 +181,7 @@ DOWNLOAD_TEXT_URL = "https://t.me/MOVIE_MINES_GROUP"
 
 # Custom Caption Under Button #
 CAPTION_BUTTON = "Get Updates"
-CAPTION_BUTTON_URL = "https://t.me/MOVIE_MINES_MAIN"
+CAPTION_BUTTON_URL = "https://t.me/MOVIE_MINES_UPDATE"
 
 LOG_STR = "Current Cusomized Configurations are:-\n"
 LOG_STR += ("IMDB Results are enabled, Bot will be showing imdb details for you queries.\n" if IMDB else "IMBD Results are disabled.\n")
