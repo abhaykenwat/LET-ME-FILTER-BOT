@@ -94,8 +94,8 @@ MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "MOVIE_MINES_GROUP") 
 
 # Url Shortner
 URL_MODE = is_enabled((environ.get("URL_MODE","True")), False) # make it true to enable url shortner in groups or pm
-URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'atglinks.com') #Always use website url from api section 
-URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '72a7f0131e5e657e37cf7e2a9e928a616b671cf5')
+URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'mypowerlinks.org') #Always use website url from api section 
+URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '87dbc66e5015ae8ac5ebaaccdabd34a1c0a2d91b')
 
 #4 => verification_steps ! [Youtube@LazyDeveloperr]
 # URL SHORTNER FOR USER VERIFICATION
