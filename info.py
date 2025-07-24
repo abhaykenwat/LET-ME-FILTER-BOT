@@ -68,7 +68,7 @@ SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'AK_BOTZ_UPDATE')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "False")), False)
-CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [MOVIE_MINES_GROUP™](https://t.me/MOVIE_MINES_GROUP)</b>⚡\n\n📂<b>File Name:</b> ⪧ {file_caption} \n <b>Size: </b>{file_size}\n\n❤")
+CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>File uploaded by [MOVIE_MINES_GROUP™](https://t.me/MOVIE_MINES_UPDATE)</b>⚡\n\n📂<b>File Name:</b> ⪧ {file_caption} \n <b>Size: </b>{file_size}\n\n❤")
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", CUSTOM_FILE_CAPTION)
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Your Query: {query}</b> \n‌‌‌‌🎁Support: @LazyDeveloper 🎁\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10 \n\n♥️ we are nothing without you ♥️ \n\n💛 Please Share Us 💛\n\n⚠️Click on the button 👇 below to get your query privately")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "False"), False)
@@ -81,7 +81,7 @@ PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "True")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 #LazyRenamer Configs
-FLOOD = int(environ.get("FLOOD", "10"))
+FLOOD = int(environ.get("FLOOD", "7"))
 LAZY_MODE = bool(environ.get("LAZY_MODE")) #make it true to enable file renaming feature in bot
 
 
@@ -100,8 +100,8 @@ URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '72a7f0131e5e
 #4 => verification_steps ! [Youtube@LazyDeveloperr]
 # URL SHORTNER FOR USER VERIFICATION
 IS_LAZYUSER_VERIFICATION = is_enabled((environ.get("IS_LAZYUSER_VERIFICATION","True")), False) # make it true to enable url shortner in groups or pm
-LAZY_SHORTNER_URL = environ.get('LAZY_SHORTNER_URL', 'atglinks.com')
-LAZY_SHORTNER_API = environ.get('LAZY_SHORTNER_API', '72a7f0131e5e657e37cf7e2a9e928a616b671cf5') #Always use website url from api section 
+LAZY_SHORTNER_URL = environ.get('LAZY_SHORTNER_URL', 'mypowerlinks.org')
+LAZY_SHORTNER_API = environ.get('LAZY_SHORTNER_API', '87dbc66e5015ae8ac5ebaaccdabd34a1c0a2d91b') #Always use website url from api section 
 
 lazy_groups = environ.get('LAZY_GROUPS','')
 LAZY_GROUPS = [int(lazy_groups) for lazy_groups in lazy_groups.split()] if lazy_groups else None # ADD GROUP ID IN THIS VARIABLE 
