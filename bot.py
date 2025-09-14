@@ -1,9 +1,10 @@
-import asyncio
 import logging
-from aiohttp import web
-from pyrogram import Client, idle, __version__
+import logging.config
+import os
+import asyncio
+from pyrogram import Client, __version__, idle, types
 from pyrogram.raw.all import layer
-from pyrogram.errors import FloodWait
+from aiohttp import web
 
 from database.ia_filterdb import Media
 from database.users_chats_db import db
@@ -14,57 +15,68 @@ from lazybot import LazyPrincessBot
 from util.keepalive import ping_server
 from lazybot.clients import initialize_clients
 
-PORT = "8080"
+# ---------------- Logging Setup ---------------- #
+logging.config.fileConfig('logging.conf')
+logging.getLogger().setLevel(logging.INFO)
+logging.getLogger("pyrogram").setLevel(logging.WARNING)
+logging.getLogger("imdbpy").setLevel(logging.ERROR)
+logging.getLogger("aiohttp").setLevel(logging.ERROR)
+logging.getLogger("aiohttp.web").setLevel(logging.ERROR)
 
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+
+# ---------------- Constants ---------------- #
+PORT = 8080  # must be int
+BIND_ADDRESS = "0.0.0.0" if ON_HEROKU else BIND_ADRESS
+
+# ---------------- Bot Initialization ---------------- #
 async def Lazy_start():
-    try:
-        print(" Initalizing Telegram Bot ")
+    print("\nInitializing Telegram Bot...")
+    
+    if not os.path.isdir(DOWNLOAD_LOCATION):
+        os.makedirs(DOWNLOAD_LOCATION)
 
-        # Bot start karna bhi yahi loop me
-        await LazyPrincessBot.start()
+    await LazyPrincessBot.start()
+    
+    bot_info = await LazyPrincessBot.get_me()
+    LazyPrincessBot.username = bot_info.username
 
-        # Bot info
-        bot_info = await LazyPrincessBot.get_me()
-        LazyPrincessBot.username = bot_info.username
+    await initialize_clients()
 
-        # Clients
-        await initialize_clients()
+    if ON_HEROKU:
+        asyncio.create_task(ping_server())
 
-        if ON_HEROKU:
-            asyncio.create_task(ping_server())
+    # Load banned users and chats
+    b_users, b_chats, lz_verified = await db.get_banned()
+    temp.BANNED_USERS = b_users
+    temp.BANNED_CHATS = b_chats
+    temp.LAZY_VERIFIED_CHATS = lz_verified
 
-        # Banned users/chats
-        b_users, b_chats, lz_verified = await db.get_banned()
-        temp.BANNED_USERS = b_users
-        temp.BANNED_CHATS = b_chats
-        temp.LAZY_VERIFIED_CHATS = lz_verified
+    await Media.ensure_indexes()
 
-        await Media.ensure_indexes()
+    me = await LazyPrincessBot.get_me()
+    temp.ME = me.id
+    temp.U_NAME = me.username
+    temp.B_NAME = me.first_name
+    LazyPrincessBot.username = '@' + me.username
 
-        # Web server
-        app = web.AppRunner(await web_server())
-        await app.setup()
-        await web.TCPSite(app, "0.0.0.0", PORT).start()
+    # Start web server
+    app = web.AppRunner(await web_server())
+    await app.setup()
+    await web.TCPSite(app, BIND_ADDRESS, PORT).start()
 
-        print(f"{bot_info.first_name} started with Pyrogram v{__version__} (Layer {layer})")
+    logging.info(f"{me.first_name} running Pyrogram v{__version__} (Layer {layer}) on {LazyPrincessBot.username}.")
+    logging.info(LOG_STR)
 
-        await idle()
+    await idle()
 
-    except FloodWait as e:
-        print(f"FloodWait {e.value} sec, sleeping...")
-        await asyncio.sleep(e.value)
-        await Lazy_start()
-
-    except Exception as e:
-        logging.error(f"Unexpected error: {e}", exc_info=True)
-        await asyncio.sleep(5)
-        await Lazy_start()
-
-    finally:
-        await LazyPrincessBot.stop()
 
 if __name__ == "__main__":
     try:
         asyncio.run(Lazy_start())
+        logging.info('-----------------------🧐 Service running in Lazy Mode 😴-----------------------')
     except KeyboardInterrupt:
-        print("Service stopped.")
+        logging.info('-----------------------😜 Service Stopped Sweetheart 😝-----------------------')
